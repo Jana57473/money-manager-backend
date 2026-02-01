@@ -19,6 +19,11 @@ const transactionSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    division: {
+      type: String,
+      required: true,
+      enum: ["Personal", "Office"],
+    },
     date: {
       type: Date,
       default: Date.now,
