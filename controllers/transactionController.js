@@ -1,6 +1,6 @@
 const Transaction = require("../models/Transaction");
 
-// Add new transaction
+
 exports.addTransaction = async (req, res) => {
   try {
     const transaction = await Transaction.create(req.body);
